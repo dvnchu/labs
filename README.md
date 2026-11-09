@@ -14,14 +14,6 @@ documentación (RFC 5737).
   diseño del laboratorio, plan de direccionamiento, VLANs, firewall, VPN y los
   problemas reales que aparecieron en el camino.
 
-### Blue team
-- **[CASE-001 — PowerShell ofuscado desde un macro malicioso](blue-team/CASE-001-encoded-powershell.md)** —
-  informe de práctica de respuesta a incidentes: triage, análisis técnico,
-  evidencia, IOCs, recomendaciones y mapeo a MITRE ATT&CK.
-
-### Offensive
-- _En preparación_ (HTB / CPTS).
-
 ## Stack
 
 Proxmox VE · KVM · LXC · Docker · pfSense · VLANs · OpenVPN · Wireshark/tcpdump ·
