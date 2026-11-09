@@ -11,7 +11,7 @@ entorno aislado pero accesible de forma remota.
 | Componente | Detalle |
 |---|---|
 | Host | Lenovo ThinkCentre M920s SFF — Core i5 9.ª gen |
-| RAM | 24 GB (ampliado desde 16 GB) |
+| RAM | 40GB |
 | Disco | 1 TB NVMe |
 | Hypervisor | Proxmox VE 8.x |
 | Uplink | Cable a un AP del router doméstico (`192.168.1.0/24`) |
