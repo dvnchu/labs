@@ -131,8 +131,7 @@ configurado y la interfaz habilitada era la IP secundaria**, así que el port
 forwarding apuntaba a una IP que no era la del pfSense. Se corrigió apuntando la DMZ
 a la IP correcta y la conexión funcionó, incluso desde redes externas.
 
-Moraleja: antes de tocar la configuración del servidor, verificar que el paquete
-llegue. Un `tcpdump` en la WAN del pfSense hubiera ahorrado horas.
+
 
 ## Servicios desplegados
 
@@ -155,13 +154,3 @@ llegue. Un `tcpdump` en la WAN del pfSense hubiera ahorrado horas.
 - Completar el dominio Active Directory y las GPO.
 - Sumar Wazuh o ELK para centralizar logs del DC y de la red.
 - Automatizar backups verificables (no solo snapshots).
-
-## Aprendizajes
-
-1. **Aislar primero, conectar después.** El diseño de VLANs antes de levantar
-   servicios evitó exponer accidentalmente la red doméstica.
-2. **El problema suele estar una capa más abajo.** Horas perdidas en TLS que en
-   realidad eran un port forwarding mal apuntado.
-3. **Documentar el runbook mientras se hace.** El procedimiento de recuperación de
-   acceso a pfSense se escribió justo después de quedar bloqueado, cuando todavía
-   dolía.
