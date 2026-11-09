@@ -109,19 +109,4 @@ expuestas. No hay acceso confirmado a datos sensibles.
 | Persistence | T1053.005 | Tarea `UpdaterCheck` |
 | Command and Control | T1071.001 | Beaconing HTTPS |
 
-## Lecciones
 
-- **El orden importa.** Contener antes de analizar: mientras se investigaba el
-  beaconing, el host seguía en la red.
-- **Un solo indicador no es suficiente.** La IP sola no alcanza; la combinación de
-  tarea + intervalo + padre del proceso es lo que sostiene la conclusión.
-- **La detección se escribe después del caso.** La regla para `-enc` con padre de
-  Office salió de este ejercicio, no de un listado genérico.
-- **Los nombres "legítimos" son el problema.** `UpdaterCheck` pasaría un primer
-  vistazo; por eso hay que mirar el binario y el padre, no el nombre.
-
-## Próximos pasos (si fuera un caso real)
-
-- Análisis de memoria del endpoint para recuperar el segundo stage.
-- Revisión de correo para identificar otros destinatarios del mismo adjunto.
-- Correlación en el SIEM de conexiones a `203.0.113.45` en los últimos 30 días.
