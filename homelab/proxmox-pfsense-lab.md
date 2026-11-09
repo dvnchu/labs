@@ -40,7 +40,7 @@ pfSense ── vmbr99 (trunk, vtnet1)
 | LAN base (`vtnet1`) | pfSense | `10.10.10.1/24` | `10.10.10.100–200` | Trunk hacia VLANs |
 | VLAN 10 | pfSense | `10.10.1.1/24` | `10.10.1.20–150` | Máquina atacante |
 | VLAN 20 | pfSense | `10.10.2.1/24` | `10.10.2.20–150` | Objetivos vulnerables |
-| VLAN 30 | pfSense | `10.10.3.0/24` | — | Definida para VPN |
+| VLAN 30 | pfSense | `10.10.3.0/24` | — | AD |
 
 La separación por VLAN es el punto central del diseño: el tráfico entre la máquina
 atacante y los objetivos pasa por el firewall, y el resto de la red doméstica queda
