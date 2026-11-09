@@ -29,7 +29,7 @@ pfSense ── vmbr99 (trunk, vtnet1)
    │
    ├── VLAN 10 → máquinas atacantes
    ├── VLAN 20 → objetivos vulnerables
-   └── VLAN 30 → (definida en la config de VPN)
+   └── VLAN 30 → AD
 ```
 
 ## Plan de direccionamiento
